@@ -25,7 +25,14 @@ public class Main {
 	    //System.out.println(result);  // ici j'affiche le nombre d'élement insérer
 	    
 	    
-	    // STEP 3: Création objet ResultSET(table en mémoire) dont le rôle est de stocker le résultat d'une requete select
+	    //Code de l'update (Mise à jour)
+	 	//String newNom = "Omar Moutari";
+	 	//int result = stmt.executeUpdate("update etudiant set nom='"+ newNom+"' where id ='1'");
+	 	
+	 	//Code delete(suppression)
+	 	int result = stmt.executeUpdate("delete from etudiant where id ='4'");
+	 	
+	 	// STEP 3: Création objet ResultSET(table en mémoire) dont le rôle est de stocker le résultat d'une requete select
 	 		ResultSet rs = stmt.executeQuery("select id, nom, classe from etudiant");
 	 		
 	 		// STEP 4: On fait le parcours du ResultSet et on affiche son contenu
